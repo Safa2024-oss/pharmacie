@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>produits_beaute</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #80c784;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .product {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+            justify-items: center;
+        }
+
+        .item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            width: 220px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product-name {
+            font-size: 1.2em;
+            color: #80c784;
+            margin: 10px 0;
+        }
+
+        .product-price {
+            font-size: 1.1em;
+            color: #e67e22;
+            margin: 5px 0;
+        }
+
+        .product-description {
+            font-size: 0.9em;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        .btn3 {
+            display: inline-block;
+            padding: 12px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #80c784; /* Green text */
+            border: 2px solid #80c784; /* Green border */
+            border-radius: 5px; /* Rounded corners */
+            background-color: white; /* White background */
+            transition: all 0.3s ease; /* Transition effect */
+            text-align: center; /* Center the text */
+        }
+
+        /* Hover effect on button */
+        .btn3:hover {
+            background-color: #80c784; /* Green background on hover */
+            color: white; /* White text */
+            border-color: #80c784; /* Green border on hover */
+        }
+
+        /* Media Queries for responsiveness */
+        @media screen and (max-width: 1200px) {
+            .product {
+                grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            .product {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .product {
+                grid-template-columns: 1fr; /* 1 column on mobile devices */
+            }
+
+            header h1 {
+                font-size: 1.8em; /* Smaller header font size on mobile */
+            }
+        }
+    </style>
+<body>
+    <header>
+        <h1>Produits beaute</h1>
+    </header>
+
+    <div class="product">
+        <div class="item">
+            <img src="lip_gloss.webp" alt="lip_gloss">
+            <div class="product-name">lip_gloss</div>
+            <div class="product-price">15.00 TND</div>
+            <div class="product-description">Un lip gloss brillant et hydratant, 
+                conçu pour sublimer vos lèvres avec une touche de couleur et d'éclat
+                </div>
+                <a href="#" class="btn3">buy now</a>
+
+        </div>
+        <div class="item">
+            <img src="ecran.jpg" alt="ecran_solaire">
+            <div class="product-name">ecran_solaire</div>
+            <div class="product-price">95.00 TND</div>
+            <div class="product-description">Un écran solaire léger et efficace, 
+                offrant une protection élevée contre les rayons UVA et UVB. 
+                Sa formule non grasse hydrate la peau tout en la protégeant des dommages du soleil,
+                 idéale pour un usage quotidien.</div>
+                 <a href="#" class="btn3">buy now</a>
+        </div>
+        <div class="item">
+            <img src="gel.jpg" alt="gel_nettoyant">
+            <div class="product-name">gel nettoyant</div>
+            <div class="product-price">50.00 TND</div>
+            <div class="product-description">Un gel nettoyant doux, conçu pour éliminer les impuretés et l'excès de sébum tout en respectant l'équilibre naturel de la peau. </div>
+            <a href="#" class="btn3">buy now</a>
+        </div>
+        <div class="item">
+            <img src="cerne.webp" alt="anti-cernes">
+            <div class="product-name">anti-cernes</div>
+            <div class="product-price">20.00 TND</div>
+            <div class="product-description">Un anti-cernes léger et couvrant, conçu pour camoufler les cernes et les imperfections. Sa texture douce s’applique facilement, illuminant le regard tout en offrant une finition naturelle et longue tenue.</div>
+            <a href="#" class="btn3">buy now</a>
+        </div>
+        <div class="item">
+            <img src="login.html" alt="mousse nettoyante">
+            <div class="product-name">lingmousse nettoyanteettes</div>
+            <div class="product-price">50.00 TND</div>
+            <div class="product-description">Une mousse nettoyante légère et onctueuse, idéale pour éliminer les impuretés et l'excès de sébum. Sa formule douce respecte l'équilibre naturel de la peau</div>
+            <a href="#" class="btn3">buy now</a>
+        </div>
+        <div class="item">
+            <img src="serum.jpg" alt="serum">
+            <div class="product-name">serum</div>
+            <div class="product-price">30.00 TND</div>
+            <div class="product-description">Un sérum léger et concentré, formulé pour hydrater, nourrir et revitaliser la peau. Enrichi en actifs puissants, il pénètre en profondeur pour traiter des besoins spécifiques</div>
+            <a href="#" class="btn3">buy now</a>
+        </div>
+        <div class="item">
+            <img src="s1.jpg" alt="crème_main">
+            <div class="product-name">crème_main</div>
+            <div class="product-price">50.00 TND</div>
+            <div class="product-description">Une crème pour les mains nourrissante, spécialement formulée pour hydrater et adoucir les mains sèches et abîmées. Sa texture légère pénètre rapidement, laissant la peau douce, protégée et délicatement parfumée</div>
+            <a href="#" class="btn3">buy now</a>
+        </div>
+        <div class="item">
+            <img src="seohora.jpg" alt="coffret_Sephora">
+            <div class="product-name">coffret_Sephora</div>
+            <div class="product-price">150.00 TND</div>
+            <div class="product-description">Un coffret de soins de la peau Sephora, comprenant une sélection de produits essentiels pour une routine complète. Nettoyants, hydratants et sérums sont réunis pour nettoyer, nourrir et sublimer votre peau</div>
+            <a href="#" class="btn3">buy now</a>
+        </div>
+
+        
+
+
+    
+</body>
+</html>

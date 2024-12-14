@@ -1,0 +1,122 @@
+body {
+    background-image: url('ph8.jpg');
+    background-size: cover; /* Image covers entire page */
+    background-position: center; /* Image is centered */
+    background-attachment: fixed; /* Image stays fixed while scrolling */
+    color: #333;
+    height: 100vh; /* Full window height */
+    font-family: Arial, sans-serif;
+    background-color: #f4f8f7; /* Light background color */
+    color: #333; /* Dark text for readability */
+}
+
+/* Main Container */
+.cont {
+    text-align: center;
+    padding: 50px;
+}
+
+/* Main Title */
+.cnx {
+    color: #4CAF50; /* Pharmacy green */
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Subtitle or main message */
+.lead {
+    font-size: 20px;
+    color: #666;
+    margin-top: 20px;
+}
+
+/* Button Styles */
+.btn, .btn2 {
+    display: inline-block;
+    padding: 12px 30px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Return to homepage button */
+.btn {
+    background-color: #4CAF50; /* Pharmacy green */
+    color: white;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #45a049; /* Slightly darker on hover */
+}
+
+/* Shop Now button */
+.btn2 {
+    background-color: #009688; /* Teal color */
+    color: white;
+    border: none;
+}
+
+.btn2:hover {
+    background-color: #00796b; /* Slightly darker on hover */
+}
+
+/* Space between buttons */
+.btn2 {
+    margin-top: 10px; /* Smaller space between buttons */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Reduce padding for small screens */
+    .cont {
+        padding: 20px;
+    }
+
+    /* Reduce font size for the main title */
+    .cnx {
+        font-size: 28px;
+    }
+
+    /* Adjust font size for the subtitle */
+    .lead {
+        font-size: 18px;
+    }
+
+    /* Stack buttons vertically for smaller screens */
+    .btn, .btn2 {
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+    }
+
+    /* Adjust background image */
+    body {
+        background-attachment: scroll; /* Allow image to scroll */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further reduce padding for very small screens */
+    .cont {
+        padding: 10px;
+    }
+
+    /* Reduce font size further */
+    .cnx {
+        font-size: 24px;
+    }
+
+    .lead {
+        font-size: 16px;
+    }
+
+    /* Make buttons more compact */
+    .btn, .btn2 {
+        font-size: 14px;
+        padding: 10px 25px;
+    }
+}

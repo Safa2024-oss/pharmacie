@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>catalog</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        header {
+            background-color: #80c784;
+            color: white;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-align: center;
+        }
+
+        header p {
+            font-size: 1.2em;
+            text-align: center;
+        }
+
+        /* Navigation */
+        .navigator {
+            background-color: #fff;
+            margin-top: 30px;
+            padding: 40px 0;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav_item {
+            display: inline-block;
+            text-align: center;
+            border: 2px solid #80c784;
+            border-radius: 8px;
+            padding: 15px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .nav_item:hover {
+            transform: scale(1.1);
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #80c784;
+            font-size: 1.4em;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        .nav_item img {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Spacing */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            .nav {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .nav_item {
+                width: 90%; /* Réduction de la largeur des cartes */
+                padding: 10px;
+            }
+
+            .nav_item img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .nav-link {
+                font-size: 1.2em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .nav_item {
+                padding: 8px;
+            }
+
+            .nav_item img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .nav-link {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="text-center py-4">
+        <h1>Catalogue des Produits</h1>
+        <p>Explorez nos produits pharmaceutiques disponibles.</p>
+    </header>
+
+    <nav class="navigator">
+        <div class="nav">
+            <ul class="navbar">
+                <li class="nav_item">
+                    <img src="e1.jpg" alt="Produits Enfants">
+                    <a class="nav-link" href="produits_enfants.html">Produits Enfants</a>
+                </li>
+                <li class="nav_item">
+                    <img src="skin.avif" alt="Produits Beauté">
+                    <a class="nav-link" href="produit_beaute.html">Produits Beauté</a>
+                </li>
+                <li class="nav_item">
+                    <img src="med.png" alt="Produits Santé">
+                    <a class="nav-link" href="produit_sante.html">Produits Santé</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>
