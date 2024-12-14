@@ -1,0 +1,12 @@
+body {
+    background-color: #231f1f; /* Changer la couleur de fond */
+}
+
+.btn-primary {
+    background-color: #4CAF50; /* Modifier la couleur de fond des boutons */
+}
+
+footer {
+    font-size: 14px;
+    color: #888;
+}

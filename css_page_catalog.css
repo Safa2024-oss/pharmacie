@@ -1,0 +1,15 @@
+body.login {
+    background-image: url('ph11.avif'); /* Remplace par le chemin de ton image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body.login {
+        background-size: contain; /* Ajuste l'image pour qu'elle soit entièrement visible */
+        background-attachment: scroll; /* Désactive l'effet fixe pour les petits écrans */
+    }
+}

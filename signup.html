@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_page_2_sign.css">
+    <title>Signup</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Client 🦋⋆｡˚</legend>
+            <table>
+                <!-- Nom/Prénom (lettres uniquement) -->
+                <tr>
+                    <td><label for="nom">Nom/Prénom</label></td>
+                    <td><input type="text" name="nom_prenom" id="nom" pattern="[A-Za-z]+" title="Veuillez entrer seulement des lettres" required></td>
+                </tr>
+                <!-- Adresse -->
+                <tr>
+                    <td><label for="adresse">Adresse</label></td>
+                    <td><input type="text" name="adresse" id="adresse" required></td>
+                </tr>
+                <!-- Numéro Postal (Limité à 4 chiffres) -->
+                <tr>
+                    <td><label for="num_postal">Numéro Postal</label><small> (4 chiffres)</small></td>
+                    <td><input type="text" name="num_postal" id="num_postal" pattern="\d{4}" title="Le numéro postal doit être un nombre à 4 chiffres" required></td>
+                </tr>
+                <!-- Adresse-email -->
+                <tr>
+                    <td><label for="adresse-email">Adresse-email</label></td>
+                    <td><input type="email" name="adresse-email" id="adresse-email" required title="Veuillez entrer un email valide"></td>
+                </tr>
+                <!-- Numéro de téléphone -->
+                <tr>
+                    <td><label for="num-tele">Numéro de Téléphone</label></td>
+                    <td><input type="tel" name="num-tele" id="num-tele" pattern="\d{8}" title="Le numéro de téléphone doit comporter 8 chiffres" required></td>
+                </tr>
+                <!-- Localité -->
+                <tr>
+                    <td><label for="localite">Localité</label></td>
+                    <td><input type="text" name="localite" id="localite" required></td>
+                </tr>
+                <!-- Pays -->
+                <tr>
+                    <td><label for="pays">Pays</label></td>
+                    <td>
+                        <select name="pays" id="pays" required>
+                            <option value="maroc">Maroc</option>
+                            <option value="libya">Libya</option>
+                            <option value="algerie">Algérie</option>
+                            <option value="tunisie">Tunisie</option>
+                            <option value="mauritania">Mauritanie</option>
+                        </select>
+                    </td>
+                </tr>
+                <!-- Boutons -->
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="reset" value="Effacer" class="ef">
+                        <input type="submit" value="Soumettre" class="su">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
